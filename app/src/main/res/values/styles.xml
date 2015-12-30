@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
@@ -12,14 +12,14 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
-    <!--<style name="AppTheme2" parent="AppTheme.Base">-->
-    <!--</style>-->
+    <!--向下兼容包中的主题，需要设置添加一个去掉"android:"的同类属性-->
+    <!--此主题下，actionBar可覆盖在内容上-->
+    <style name="AppTheme.Actionbar.Overlay" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 
-    <!--<style name="AppTheme.Base" parent="Theme.AppCompat">-->
-    <!--<item name="windowActionBar">false</item>-->
-    <!--<del><item name="android:windowNoTitle">true</item></del>-->
-    <!--&lt;!&ndash; 使用 API Level 22 編譯的話，要拿掉前綴字 &ndash;&gt;-->
-    <!--<item name="windowNoTitle">true</item>-->
-    <!--</style>-->
 </resources>

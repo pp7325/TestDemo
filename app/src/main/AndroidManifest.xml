@@ -18,14 +18,14 @@
         </activity>
 
         <activity
-            android:name=".TimeGetterActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".TimeGetterActivity"></activity>
         <activity
-            android:name=".SwipeBackActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".SwipeBackActivity"></activity>
         <activity
-            android:name=".MeterialActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".MeterialActivity"></activity>
+        <activity
+            android:name=".ActionbarOverlayActivity"
+            android:theme="@style/AppTheme.Actionbar.Overlay"></activity>
     </application>
 
 </manifest>

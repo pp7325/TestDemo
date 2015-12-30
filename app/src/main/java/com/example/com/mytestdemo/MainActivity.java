@@ -28,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void meterial(View v) {
         startActivity(new Intent(this, MeterialActivity.class));
     }
+
+    public void actionbarOverlay(View v) {
+        startActivity(new Intent(this, ActionbarOverlayActivity.class));
+    }
 }
