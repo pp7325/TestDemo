@@ -7,7 +7,7 @@
         <!--actionBar颜色-->
         <item name="colorPrimary">#06f</item>
 
-        <!--状态栏颜色，全局主题默认颜色-->
+        <!--状态栏颜色-->
         <item name="colorPrimaryDark">#09f</item>
 
         <!--button等点击时的颜色-->

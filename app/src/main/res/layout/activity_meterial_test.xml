@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,11 +20,62 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Switch"
+                    android:id="@+id/switch1"/>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/toggleButton"
+                    />
+            </LinearLayout>
+
+            <SeekBar
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="edittext"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="checkBox"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="radioButton"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -33,14 +84,14 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/btn_ripple_bg"
                     android:colorControlHighlight="#f00"
-                    android:text="only_btn" />
+                    android:text="only_btn"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/btn_ripple_bg"
                     android:colorControlHighlight="#f00"
-                    android:text="only_btn" />
+                    android:text="only_btn"/>
 
             </LinearLayout>
 
@@ -48,7 +99,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="linearlayout_default(no_bg)" />
+                android:text="linearlayout_default(no_bg)"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,7 +115,7 @@
                     android:layout_weight="1"
                     android:elevation="5dp"
                     android:padding="5dp"
-                    android:text="textview_no_background" />
+                    android:text="textview_no_background"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -74,7 +125,7 @@
                     android:background="#fff"
                     android:elevation="5dp"
                     android:padding="5dp"
-                    android:text="textview_bg_#fff" />
+                    android:text="textview_bg_#fff"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -84,7 +135,7 @@
                     android:background="#f00"
                     android:elevation="5dp"
                     android:padding="5dp"
-                    android:text="textview_bg_#f00" />
+                    android:text="textview_bg_#f00"/>
 
             </LinearLayout>
 
@@ -92,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="linearlayout_bg_green" />
+                android:text="linearlayout_bg_green"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:background="?android:attr/selectableItemBackground"
                     android:elevation="5dp"
-                    android:text="btn_has_no_elevation" />
+                    android:text="btn_has_no_elevation"/>
 
 
             </LinearLayout>
@@ -118,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="btn_in_white_linearlayout" />
+                android:text="btn_in_white_linearlayout"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -131,19 +182,19 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="nomal" />
+                    android:text="nomal"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?android:attr/selectableItemBackground"
-                    android:text="波纹1" />
+                    android:text="波纹1"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:text="波纹2" />
+                    android:text="波纹2"/>
             </LinearLayout>
 
 
@@ -151,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="one_btn_in_clickable_ripple_linearlayout" />
+                android:text="one_btn_in_clickable_ripple_linearlayout"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -165,14 +216,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?android:attr/selectableItemBackground"
-                    android:text="波纹1" />
+                    android:text="波纹1"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="one_btn_in_clickable_ripple_framelayout" />
+                android:text="one_btn_in_clickable_ripple_framelayout"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -187,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:elevation="5dp"
-                    android:text="btn1" />
+                    android:text="btn1"/>
             </FrameLayout>
 
 
@@ -195,7 +246,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="btn_in_foreground_ripple_framelayout)" />
+                android:text="btn_in_foreground_ripple_framelayout)"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -215,13 +266,13 @@
                     android:background="?android:attr/selectableItemBackground"
                     android:colorControlHighlight="#00f"
                     android:elevation="5dp"
-                    android:text="blue_ripple" />
+                    android:text="blue_ripple"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:text="only_framelayout_effective" />
+                    android:text="only_framelayout_effective"/>
 
             </FrameLayout>
         </LinearLayout>
