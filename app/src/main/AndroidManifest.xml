@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.example.com.mytestdemo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.com.mytestdemo">
 
     <application
         android:allowBackup="true"
@@ -10,19 +10,22 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="activity">
+            android:label="activity"
+            android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity android:name=".TimeGetterActivity"></activity>
+
         <activity
-            android:name=".TimeGetterActivity"></activity>
-        <activity
-            android:name=".SwipeBackActivity"></activity>
-        <activity
-            android:name=".MeterialActivity"></activity>
+            android:name=".SwipeBackActivity"
+            android:theme="@style/AppTheme.NoBg"></activity>
+
+        <activity android:name=".MeterialActivity"></activity>
+
         <activity
             android:name=".ActionbarOverlayActivity"
             android:theme="@style/AppTheme.Actionbar.Overlay"></activity>

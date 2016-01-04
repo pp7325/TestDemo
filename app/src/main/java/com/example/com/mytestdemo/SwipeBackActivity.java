@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.jude.swipbackhelper.SwipeBackHelper;
@@ -12,11 +13,15 @@ import com.jude.swipbackhelper.SwipeListener;
 /**
  * Created by MMC_mmc on 2015/12/10.
  */
-public class SwipeBackActivity extends Activity {
+public class SwipeBackActivity extends AppCompatActivity {
+    private static int i = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SwipeBackHelper.onCreate(this);
+        setTitle("activity_" + i);
+        i++;
         setContentView(R.layout.activity_swipeback);
 
         findViewById(R.id.my_view).setOnClickListener(new View.OnClickListener() {
@@ -31,7 +36,7 @@ public class SwipeBackActivity extends Activity {
                 .setSwipeEdge(200)//可滑动的范围。px。200表示为左边200px的屏幕
                 .setSwipeEdgePercent(0.2f)//可滑动的范围。百分比。0.2表示为左边20%的屏幕
                 .setSwipeSensitivity(0.5f)//对横向滑动手势的敏感程度。0为迟钝 1为敏感
-                .setScrimColor(Color.BLUE)//底层阴影颜色
+                .setScrimColor(Color.WHITE)//底层阴影颜色
                 .setClosePercent(0.8f)//触发关闭Activity百分比
                 .setSwipeRelateEnable(false)//是否与下一级activity联动。默认是
                 .setSwipeRelateOffset(500)//activity联动时的偏移量。默认500px。

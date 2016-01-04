@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+        <!--actionBar颜色-->
+        <item name="colorPrimary">#06f</item>
+
+        <!--状态栏颜色，全局主题默认颜色-->
+        <item name="colorPrimaryDark">#09f</item>
+
+        <!--button等点击时的颜色-->
+        <item name="android:colorControlHighlight">#f60</item>
+
+        <!--radioButton、editText、proressBar等选中的背景色-->
+        <item name="colorAccent">#f0a</item>
+    </style>
+
+
+    <style name="AppTheme.NoBg" parent="AppTheme">
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

@@ -2,6 +2,7 @@ package com.example.com.mytestdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,7 +18,7 @@ import java.util.TimeZone;
 /**
  * Created by MMC_mmc on 2015/11/30.
  */
-public class TimeGetterActivity extends Activity {
+public class TimeGetterActivity extends AppCompatActivity {
 
     TextView tvResult;
     TextView methed;
