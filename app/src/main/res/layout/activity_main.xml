@@ -39,4 +39,10 @@
         android:elevation="20dp"
         android:onClick="actionbarOverlay"
         android:text="actionbar_overlay" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="" />
 </LinearLayout>
