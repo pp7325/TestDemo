@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,10 +40,18 @@
         android:elevation="20dp"
         android:onClick="actionbarOverlay"
         android:text="actionbar_overlay" />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="" />
+
+    <com.example.com.mytestdemo.view.GifMovieView
+        android:id="@+id/gifview"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#f00"
+        custom:gif="@drawable/fengshui" />
 </LinearLayout>

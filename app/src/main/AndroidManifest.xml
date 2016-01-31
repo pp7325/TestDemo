@@ -25,6 +25,7 @@
             android:theme="@style/AppTheme.NoBg"></activity>
 
         <activity android:name=".MeterialActivity"></activity>
+        <activity android:name=".MyFragmentActivity"></activity>
 
         <activity
             android:name=".ActionbarOverlayActivity"

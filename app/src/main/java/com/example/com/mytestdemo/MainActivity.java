@@ -1,11 +1,16 @@
 package com.example.com.mytestdemo;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.example.com.mytestdemo.view.GifMovieView;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -18,13 +23,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        GifMovieView gifView= (GifMovieView) findViewById(R.id.gifview);
 
         Date date = new Date(1458040549348l);
         Log.i("aaa_", String.valueOf(new Date().getTime()));
-        Log.i("aaa_", (date.getMonth()+1) + "," + date.getDate() + "," + date.getTime());
+        Log.i("aaa_", (date.getMonth() + 1) + "," + date.getDate() + "," + date.getTime());
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        Log.i("aaa_", (cal.get(Calendar.MONTH)+1) + "," + cal.get(Calendar.DAY_OF_MONTH));
+        Log.i("aaa_", (cal.get(Calendar.MONTH) + 1) + "," + cal.get(Calendar.DAY_OF_MONTH));
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        toolbar.setTitle("jjj");
@@ -46,4 +52,5 @@ public class MainActivity extends AppCompatActivity {
     public void actionbarOverlay(View v) {
         startActivity(new Intent(this, ActionbarOverlayActivity.class));
     }
+
 }
